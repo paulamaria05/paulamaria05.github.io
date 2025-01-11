@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeling in Music</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #b9b9e4;
+            color: #333;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .playlist {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .playlist-card {
+            background: #b9b9e4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        .playlist-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .mix-sounds {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .mix-sounds iframe {
+            width: 48%;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        .list-group-item:nth-child(odd) {
+            background-color: #e3f2fd;
+        }
+
+        .list-group-item:nth-child(even) {
+            background-color: #fce4ec;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .button {
+            background-color: rgb(20, 19, 19);
+            border: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">The Feeling Experience</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="art.html">Art & Creativity</a></li>
+                    <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="music.html">Music</a></li>
+                    <li class="nav-item"><a class="nav-link" href="literature.html">Literature</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section: Introduction -->
+    <section class="section">
+        <div class="container">
+            <h1 class="text-center">Feeling in Music</h1>
+            <p class="text-center">Explore the deep connection between feelings and sounds through playlists, creativity, and shared experiences.</p>
+        </div>
+    </section>
+
+    <!-- Section: Playlists by Feeling -->
+<section class="section bg-light">
+    <div class="container">
+        <h2 class="text-center">Playlists by Feeling</h2>
+        <div class="playlist">
+            <!-- Happy Feeling Card -->
+            <div class="playlist-card">
+                <img src="images/happy.jpg" alt="Happy Feeling">
+                <h5>Happy Feeling</h5>
+                <p>Uplifting tracks to brighten your mood.</p>
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXdPec7aLTmlC" 
+                        width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <!-- Sad Feeling Card -->
+            <div class="playlist-card">
+                <img src="images/sad.jpg" alt="Sad Feeling">
+                <h5>Sad Feeling</h5>
+                <p>Melancholic tunes to embrace your emotions.</p>
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWVV27DiNWxkR" 
+                        width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+            <!-- Excited Feeling Card -->
+            <div class="playlist-card">
+                <img src="images/excited.jpg" alt="Excited Feeling">
+                <h5>Excited Feeling</h5>
+                <p>Energetic beats to get you pumped up.</p>
+                <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX1g0iEXLFycr" 
+                        width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Section: Create Your Feeling -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Create Your Feeling</h2>
+            <div class="mix-sounds">
+                <iframe src="https://www.youtube.com/embed/q76bMs-NwRk?si=mi4GM83iP1duFmpT" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/hw32XIVdHCU?si=7HW-58kjmGc3vzC2" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/2wHSORf3mtk?si=me0LiEbY1MebkE1D" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/x7S_8OyC_-M?si=nk44q3Rp2YUi_9de" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Podcast -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center">Podcast: Music & Emotions</h2>
+            <p class="text-center">Listen to discussions about how music captures and influences human emotions.</p>
+            <div class="text-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jPDKi-i618U?si=diM-2UEiC6_qCO9W&amp;start=5" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Share Your Songs -->
+    <section class="section">
+        <div class="container">
+            <h2 class="text-center">Share Your Songs</h2>
+            <p class="text-center">Suggest songs that evoke powerful emotions for you.</p>
+            
+            <!-- Form to Submit a Song -->
+            <form id="songForm">
+                <div class="mb-3">
+                    <label for="songName" class="form-label">Song Name</label>
+                    <input type="text" class="form-control" id="songName" placeholder="Enter the song name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="feeling" class="form-label">What Feeling Does It Evoke?</label>
+                    <input type="text" class="form-control" id="feeling" placeholder="Describe the feeling" required>
+                </div>
+                <button type="submit" class="btn btn-primary button">Submit</button>
+            </form>
+
+            <!-- Display Submitted Songs -->
+            <div class="mt-5">
+                <h4>Submitted Songs</h4>
+                <ul id="songList" class="list-group"></ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 The Feeling Experience. All Rights Reserved.</p>
+    </footer>
+
+    <script src="songscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

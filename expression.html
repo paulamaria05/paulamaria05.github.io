@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeling Expressions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #fcb045, #dd9696, #833ab4);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .video-container {
+            position: relative;
+            height: 100vh;
+            z-index: 1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            padding-top: 20px;
+        }
+
+        .expressions-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .expression {
+            text-align: center;
+            max-width: 40%;
+            margin: 15px;
+        }
+
+        .expression img {
+            width: 100%;
+            max-width: 300px;
+            max-height: 200px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+
+        .gut {
+            color: green;
+        }
+
+        .mixed {
+            color: orange;
+        }
+
+        .catch {
+            color: red;
+        }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+
+        .linguistic-curiosity {
+            background: linear-gradient(135deg, #fcb045, #dd9696, #833ab4);
+            color: white;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .linguistic-curiosity button {
+            margin: 10px;
+        }
+
+        .curiosity-content {
+        display: none;
+        margin-top: 30px;
+        color: white;
+        height: 100px; /* Fixed height for all curiosity contents */
+        overflow-y: auto; /* Scroll if the content overflows */
+        }
+
+        .button{
+            background-color: rgb(20, 19, 19);
+            border: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">The Feeling Experience</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="expression.html">Expressions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="art.html">Art & Culture</a></li>
+                    <li class="nav-item"><a class="nav-link" href="technology.html">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="science.html">Science</a></li>
+                    <li class="nav-item"><a class="nav-link" href="impossible.html">Improbable Feelings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Placeholder for fixed navbar -->
+    <div class="navbar-placeholder"></div>
+
+    <!-- Background Video -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="images/feelings.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <!-- Section: Expressions -->
+        <section class="section">
+            <div class="container">
+                <h2 class="text-center">Feeling in Everyday Language</h2>
+                <p class="text-center">Explore common expressions that capture the essence of feelings.</p>
+
+                <!-- Expressions arranged below the video -->
+                <div class="expressions-container">
+                    <div class="expression">
+                        <h4 class="gut">"I have a gut feeling about this."</h4>
+                        <p>This expression refers to a strong intuition or instinct about something.</p>
+                        <img src="images/gut.jpg" alt="Gut Feeling">
+                    </div>
+
+                    <div class="expression">
+                        <h4 class="mixed">"Mixed feelings."</h4>
+                        <p>This phrase describes being conflicted or having opposing emotions about something.</p>
+                        <img src="images/mixed.jpg" alt="Mixed Feelings">
+                    </div>
+
+                    <div class="expression">
+                        <h4 class="catch">"Catch feelings."</h4>
+                        <p>To develop romantic feelings for someone, often unexpectedly.</p>
+                        <img src="images/catch.jpg" alt="Catch Feelings">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Linguistic Curiosities -->
+        <section class="section linguistic-curiosity">
+            <div class="container">
+                <h2 class="text-center">Linguistic Curiosities About "Feeling"</h2>
+                <p class="text-center">Uncover interesting facts about the word "feeling" in an interactive way.</p>
+
+                <div class="curiosity text-center">
+                    <button class="btn btn-primary button" onclick="toggleCuriosity(1)">What is the origin of "feeling"?</button>
+                    <button class="btn btn-primary button" onclick="toggleCuriosity(2)">What does "feeling" share roots with?</button>
+                    <button class="btn btn-primary button" onclick="toggleCuriosity(3)">How has "feeling" evolved?</button>
+                </div>
+
+                <div id="curiosity-1" class="curiosity-content">
+                    <p>The word "feeling" originates from the Old English word "fēlan," which means to perceive by touch or sensation. Over time, it evolved to encompass emotional and intuitive experiences.</p>
+                </div>
+                <div id="curiosity-2" class="curiosity-content">
+                    <p>"Feeling" shares linguistic roots with the German word "fühlen" and Dutch "voelen," which also mean to sense or perceive.</p>
+                </div>
+                <div id="curiosity-3" class="curiosity-content">
+                    <p>Originally focused on physical sensations, "feeling" began to include emotional states in Middle English, reflecting the human capacity for empathy and introspection.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 The Feeling Experience. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleCuriosity(id) {
+        // Hide all curiosity contents
+        const contents = document.querySelectorAll('.curiosity-content');
+        contents.forEach(content => content.style.display = 'none');
+
+        // Show the selected curiosity content
+        const selectedContent = document.getElementById(`curiosity-${id}`);
+        selectedContent.style.display = 'block';
+    }
+    </script>
+</body>
+
+</html>
