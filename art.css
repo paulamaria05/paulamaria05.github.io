@@ -1,0 +1,74 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #fdf6e3;
+            color: #333;
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 80%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery .row {
+            margin-bottom: 30px;
+        }
+
+        .quiz {
+            background: #faf3dd;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .quiz button {
+            margin-top: 15px;
+            margin-right: 10px;
+        }
+
+        .quiz .result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .story img {
+            width: 50%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .button {
+            background-color: rgb(20, 19, 19);
+            border: #333;
+        }
+
+        .iframe {
+            width: 100%;
+            height: 200;
+        }
+        
+        .styled-iframe {
+            border: none; /* Elimină bordura implicată */
+            width: 100%; /* Se asigură că iframe-ul se adaptează la container */
+            max-width: 560px; /* Dimensiune maximă pentru iframe */
+            height: 315px; /* Înălțimea standard YouTube */
+            border-radius: 8px; /* Opțional: colțuri rotunjite pentru iframe */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+        }
+        
+    

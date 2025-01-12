@@ -1,0 +1,122 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: white;
+    margin: 0;
+}
+
+.section {
+    padding: 30px 5%;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 5%;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.zigzag-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.zigzag-line {
+    width: 100%;
+    height: 100px;
+}
+
+.zigzag-line path {
+    fill: none;
+    stroke: rgb(191, 238, 191);
+    stroke-width: 4;
+    stroke-linejoin: round;
+    animation: draw 5s infinite linear;
+}
+
+.zigzag-line path.clicked {
+    stroke: rgb(240, 148, 148);
+}
+
+.btn-outline-secondary {
+    color: #333; /* Culoare text mai închisă pentru contrast bun */
+    border-color: #333; /* Culoare contur ajustată */
+}
+
+.btn-outline-secondary:hover {
+    background-color: #333; /* Fundal închis la hover pentru un contrast bun */
+    color: #fff; /* Text alb pentru vizibilitate */
+}
+
+@keyframes draw {
+    0% {
+        stroke-dasharray: 0 200%;
+        stroke-dashoffset: 0;
+    }
+    100% {
+        stroke-dasharray: 200%;
+        stroke-dashoffset: -200%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .zigzag-container {
+        max-width: 90%;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .zigzag-container {
+        height: 80px;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+.explore-button {
+    background-color: rgb(20, 19, 19);
+    border: #333;
+}

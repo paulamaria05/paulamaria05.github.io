@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffefd5, #f4f4f9);
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #ffefd5, #f4f4f9);
+    color: #333;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: #333;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.poem-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.poem-card:nth-child(4) {
+    background: #e2edf6; /* Light blue for tranquility */
+}
+
+.poem-card:nth-child(2) {
+    background: #f4f4e5; /* Light green for empowerment */
+}
+
+.poem-card:nth-child(3) {
+    background: #f6e2e2; /* Soft red for intensity */
+}
+
+.author-section {
+    background: #f4f4f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.author-section h4:nth-child(1) {
+    color: #6a1b9a; /* Purple for elegance */
+}
+
+.interactive-corner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #eef2f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interactive-corner canvas {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.button {
+    background-color: rgb(20, 19, 19);
+    border: #333;
+}

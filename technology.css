@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #f2e9e9, #f4f4ef);
+    color: #333;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.highlight-box {
+    background: #f2e9e9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.emoji-display {
+    font-size: 5rem;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-posts img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.emoji-display-section {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background: #f2e9e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-box img {
+    margin: 0 auto;
+    display: block;
+}
+
+.highlight-box h3 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .emoji-display {
+        font-size: 3rem;
+        padding: 15px;
+    }
+
+    .section {
+        padding: 30px;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 20px;
+    }
+
+    .emoji-display {
+        font-size: 2.5rem;
+        padding: 10px;
+    }
+
+    .footer {
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+}
